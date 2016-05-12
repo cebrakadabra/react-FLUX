@@ -5,7 +5,7 @@ import * as ProductActions from "../actions/ProductActions";
 import ProductStore from "../stores/ProductStore";
 
 
-export default class Featured extends React.Component {
+export default class Products extends React.Component {
   constructor() {
     super();
     this.getProducts = this.getProducts.bind(this);

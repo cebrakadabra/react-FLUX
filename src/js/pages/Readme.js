@@ -1,6 +1,6 @@
 import React from "react";
 
-export default class Archives extends React.Component {
+export default class Readme extends React.Component {
   render() {
     return (
       <div>
