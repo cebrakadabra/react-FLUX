@@ -1,2 +1,17 @@
 
-console.log("setup running");
+import React from "react";
+import ReactDOM from "react-dom";
+import { Router, Route, IndexRoute, hashHistory } from "react-router";
+
+import Products from "./pages/Products";
+import Layout from "./pages/Layout";
+
+const app = document.getElementById('app');
+
+ReactDOM.render(
+  <Router history={hashHistory}>
+    <Route path="/" component={Layout}>
+      <IndexRoute component={Products}></IndexRoute>
+    </Route>
+  </Router>,
+app);
